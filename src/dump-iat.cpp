@@ -41,7 +41,6 @@ void parseArguments(IN int argc, IN wchar_t** argv, OUT ParsedArgs* args) {
 
         if (wcscmp(argv[i], L"-h") == 0 || wcscmp(argv[i], L"--help") == 0) {
             args->hasHelp = true;
-            printf("kutas\n");
             return;
         }
         else if ((i + 1 < argc) && wcscmp(argv[i], L"-p") == 0 && *argv[i + 1] != L'-') {
